@@ -1,5 +1,6 @@
 [requires]
 imgui/1.92.9b         # GUI
+glfw/3.4              # GLFW windowing for ImGui
 magic_enum/0.9.6      # Advanced enum parsing
 boost/1.83.0          # Needed for service, cpr in some rpofiles
 cpr/1.14.2            # CURL reqiests simlified
