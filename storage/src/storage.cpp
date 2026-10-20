@@ -1,0 +1,24 @@
+#include "storage/storage.hpp"
+
+#include <memory>
+#include <stdexcept>
+
+#include "json_backend.h"
+#include "sqlite_backend.h"
+
+namespace otterboard::storage {
+
+hare::hlogger_ptr get_logger(const std::string& path) {
+  if (!path.empty()) {
+    hare::config_ptr cfg = std::make_unique<hare::config_default>(PROJECT_NAME, MODULE_NAME);
+    cfg->set_log_path(path);
+    hare::register_logger(std::move(cfg));
+  }
+  return log();
+}
+
+std::unique_ptr<i_settings_storage> open_storage(backend_type type, const std::string& path) {
+  return nullptr;
+}
+
+}  // namespace otterboard::storage
