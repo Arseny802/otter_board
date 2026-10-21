@@ -7,10 +7,7 @@
 #include <vector>
 
 #include "storage/backend.h"
-#include "storage/i_storage.h"
-#include "storage/models.h"
+#include "storage/kanban_storage.h"
 #include "storage/storage.hpp"
 
-namespace {
-
-}  // namespace
+namespace {} // namespace

@@ -19,6 +19,7 @@ add_target(${PROJECT_NAME} EXECUTABLE
     ${IMGUI_BACKENDS_DIR}
   USES_PUBLIC 
     otterboard.common
+    otterboard.storage
     imgui::imgui
     glfw
   TEST_SOURCES_PATH
